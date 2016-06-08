@@ -34,7 +34,6 @@ app.get('*', (req, res) => {
   res.sendFile(__dirname + '/build/index.html');
 });
 
-
 /*************************************************************
  *
  * Webpack Dev Server
@@ -52,7 +51,10 @@ if (!process.env.PRODUCTION) {
     publicPath: config.output.publicPath,
     hot: true,
     noInfo: true,
-    historyApiFallback: true
+    historyApiFallback: true,
+    headers: {
+            'Access-Control-Allow-Origin': '*',
+    },
   }).listen(9090, 'localhost', (err, result) => {
     if (err) {
       console.log(err);
