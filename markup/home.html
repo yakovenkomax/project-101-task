@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="header">
+                <a class="header__logo" href="/"><i class="icon icon_logo"></i><span class="header__logo-text">Stormglass</span></a>
+                <div class="header__actions">
+                    <button class="header__button"><i class="icon icon_refresh"></i><span class="header__button-text">Refresh</span></button>
+                    <button class="header__button"><i class="icon icon_edit"></i><span class="header__button-text">Edit</span></button>
+                    <button class="header__button"><i class="icon icon_add"></i><span class="header__button-text">Add</span></button>
+                </div>
+            </div>
+            <div class="content">
+                <ul class="tile-list">
+                    <li class="tile">
+                        <div class="tile__city-name">Moscow</div>
+                        <div class="tile__temperature">
+                            <span class="tile__temperature-sign">+</span><!--
+                         --><span class="tile__temperature-value">9</span><!--
+                         --><span class="tile__temperature-unit">&deg;C</span>
+                        </div>
+                        <i class="tile__icon tile__icon_sunny"></i>
+                    </li>
+                    <li class="tile">
+                        <div class="tile__city-name">Tokyo</div>
+                        <div class="tile__temperature">
+                            <span class="tile__temperature-sign">+</span><!--
+                         --><span class="tile__temperature-value">14</span><!--
+                         --><span class="tile__temperature-unit">&deg;C</span>
+                        </div>
+                        <i class="tile__icon tile__icon_cloudy"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

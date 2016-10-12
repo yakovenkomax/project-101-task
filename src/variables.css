@@ -1,0 +1,31 @@
+$font-regular: "Raleway Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-light: "Raleway Extra Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$text-color-light: #fff;
+$text-color-dark: #044;
+
+$background-color-light: #f6f6f6;
+$background-color-dark: #013647;
+
+$primary-color: #15A6D6;
+$primary-color-tone1: #9BCDDD;
+$primary-color-tone2: #53B3D3;
+$primary-color-tone3: #037398;
+$primary-color-tone4: #024E68;
+
+$secondary-color1: #1F71DA;
+$secondary-color1-tone1: #A0BCE0;
+$secondary-color1-tone2: #5B91D7;
+$secondary-color1-tone3: #074A9F;
+$secondary-color1-tone4: #04326D;
+
+$secondary-color2: #0ED9A6;
+$secondary-color2-tone1: #9AE0CE;
+$secondary-color2-tone2: #4FD6B5;
+$secondary-color2-tone3: #009E76;
+$secondary-color2-tone4: #006C51;
+
+$primary-gradient: linear-gradient(135deg, #15a6d6 0%,#1f71da 100%);
+$light-gradient: linear-gradient(135deg, #ffffff 0%,#ebebeb 100%);
+$dark-gradient: linear-gradient(135deg, #037398 0%,#024E68 100%);
+$shadow: 0 .33em 1px -1px rgba(0, 0, 0, .25);

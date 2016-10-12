@@ -1,19 +1,28 @@
 import React from 'react';
-import { browserHistory } from 'react-router';
-import styles from './style.css';
+import classNames from 'classnames';
+import { Link } from 'react-router';
+import Icon from './Icon';
+import styles from './header.css';
 
 
 export default class Header extends React.Component {
-    signUp() {
-        browserHistory.push('/home');
-    }
-
     render() {
         return (
-            <div className={styles.content}>
-                <h1 className={styles.heading}>Login Page</h1>
-                <p className={styles.lead}>Create an account to get started!</p>
-                <button className={styles.signUpButton} onClick={this.signUp}>Sign up</button>
+            <div className={styles['root']}>
+                <Link to={`/cities`} className={styles['logo']}>
+                    <Icon type="logo"/>
+                    <span className={styles['logo-text']}>Stormglass</span>
+                </Link>
+                <div className={styles['actions']}>
+                    <button className={styles['button']} onClick={this.props.refresh}>
+                        <Icon type="refresh"/>
+                        <span className={styles['button-text']}>Refresh</span>
+                    </button>
+                    <button className={styles['button']}>
+                        <Icon type="add"/>
+                        <span className={styles['button-text']}>Add</span>
+                    </button>
+                </div>
             </div>
         );
     }

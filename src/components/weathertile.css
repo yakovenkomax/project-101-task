@@ -1,0 +1,77 @@
+@import "../variables.css";
+
+.root {
+    float: left;
+    position: relative;
+    width: calc(100% - 4rem);
+    margin: 2rem 2rem 0;
+    background: $light-gradient;
+    box-shadow: $shadow;
+    overflow: hidden;
+}
+
+@media (min-width: 480px) {
+    .root {
+        width: calc(50% - 3rem);
+    }
+    .root:nth-child(2n){
+        margin-left: 0;
+    }
+}
+@media (min-width: 800px) {
+    .root {
+        width: calc(33.33% - 2.665rem);
+    }
+    .root:nth-child(3n+1){
+        margin-left: 2rem;
+    }
+    .root:nth-child(3n){
+        margin-left: 0;
+    }
+}
+
+.body {
+    padding: 2rem;
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+}
+
+.city-name {
+    font-family: $font-light;
+    font-size: 3.2rem;
+    color: $text-color-dark;
+}
+
+.temperature {
+    display: inline-block;
+    font-family: $font-light;
+    font-size: 6.4rem;
+}
+
+.temperature-sign {
+    font-family: $font-light;
+    vertical-align: middle;
+    color: $text-color-dark;
+}
+
+.temperature-value {
+    font-family: $font-light;
+    color: $text-color-dark;
+}
+
+.temperature-unit {
+    font-size: 3.2rem;
+    vertical-align: super;
+    color: $text-color-dark;
+}
+
+.icon {
+    float: right;
+    display: inline-block;
+    width: 9rem;
+    height: 9rem;
+    background-color: #999;
+}

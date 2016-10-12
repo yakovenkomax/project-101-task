@@ -70,7 +70,7 @@ if (!process.env.PRODUCTION) {
  *****************/
 
 const port = process.env.PORT || 3000;
-const server = app.listen(port, () => {
+const server = app.listen(port, 'localhost', () => {
   const host = server.address().address;
   const port = server.address().port;
 

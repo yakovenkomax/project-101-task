@@ -1,0 +1,12 @@
+@import "../variables.css";
+
+.root {
+    position: absolute;
+    right: -.5rem;
+    bottom: -1rem;
+    vertical-align: middle;
+    width: 12rem;
+    height: 12rem;
+    fill: $text-color-dark;
+    opacity: .33;
+}

@@ -19,7 +19,8 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.jsx?$/, exclude: /node_modules/, loader: "babel-loader" },
-      { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader') }
+      { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader') },
+      { test: /\.svg$/, loader: 'svg-inline'}
     ]
   },
 
@@ -29,6 +30,7 @@ module.exports = {
 
   postcss: [
     require('autoprefixer'),
-    require('postcss-nested')
+    require('postcss-nested'),
+    require('precss')
   ]
 }

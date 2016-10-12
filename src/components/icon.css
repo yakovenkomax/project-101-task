@@ -1,0 +1,9 @@
+@import "../variables.css";
+
+.root {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: white;
+}
