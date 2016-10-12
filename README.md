@@ -1,5 +1,29 @@
-Interface icons by Eleonor Wang
-http://www.flaticon.com/packs/flat-lines/2
-Weather icons by RNS
-http://www.flaticon.com/packs/weather-icons/
+# Frontend Assignment
+
+Написать SPA ”прогноз погоды” на основе данных http://openweathermap.org/current.<br/>
+Приложение состоит из следующих экранов:<br/>
+
+* Экран (#/cities/) с текущей погодой для нескольких городов (Москва, Лондон, Токио, Нью- Йорк) и погодой в текущем местоположении (если API доступно). Список городов возможно редактировать (добавлять новые, удалять старые). Список должен сохраняться в LocalStorage.
+* Экран (#/cities/{id}) с отображением погоды в выбранном городе. Отображать текущую погоду и погоду в течение дня (утро, день, вечер) в виде иконки и в градусах Цельсия.
+
+Технические детали:<br/>
+
+* Поддерживаемые браузеры: последние версии браузеров (Chrome based, Firefox, Safari) и IE9+
+* Придерживаться принципов responsive web design.
+* Использование одного из следующих фреймворков: React (+Flux/Redux/Rx и так далее), Angu- lar 1/2. Использовать дополнительные библиотеки не рекомендуется, за исключением poly lls.
+* Возможно использовать как чистый CSS, так и less, sass, stylus и фреймворки, например, purecss, bootstrap или другой.
+* Решение должно содержать package.json с необходимыми dependencies и devDependencies.
+* По команде npm start необходимо собрать приложение (если нужно) и запустить сервер для
+отдачи статики на localhost:3000. Плюсом будет:
+* Корректная работа в мобильных браузерах (iOS Safari, Android Chrome)
+* Сборка приложения (JS, CSS) для production версии (с использованием любых сборщиков или
+без них)
+
+Приветствуются и поощряются любые разумные дополнения.<br/>
+Примерное время выполнения – 5-6 часов.<br/>
+
+Interface icons by Eleonor Wang<br/>
+http://www.flaticon.com/packs/flat-lines/2<br/>
+Weather icons by RNS<br/>
+http://www.flaticon.com/packs/weather-icons/<br/>
 http://www.rnsfonts.com/
