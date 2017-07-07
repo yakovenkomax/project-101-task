@@ -1,5 +1,7 @@
 # Frontend Assignment
 
+Result: 👎 (Reason: didn't implement all required features)
+
 Написать SPA ”прогноз погоды” на основе данных http://openweathermap.org/current.<br/>
 Приложение состоит из следующих экранов:<br/>
 
